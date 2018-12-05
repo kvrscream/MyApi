@@ -13,6 +13,9 @@ const TaskSchema = new mongoose.Schema({
     type:String,
     required: true
   },
+  cliente: {
+    type:String
+  },
   status: {
     type: String,
     default: "Aberto"
