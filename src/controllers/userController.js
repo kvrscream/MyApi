@@ -12,6 +12,7 @@ module.exports = {
 
   async login(req, res){
     const user = await User.find({username: req.body.username, password: req.body.password});
+    
     return res.json(user);
   },
 
