@@ -9,6 +9,11 @@ module.exports = {
     return res.json(tasks);
   },
 
+  async single(req, res){
+    const tasks = await Task.find({_id: req.params.id});
+    return res.json(tasks);
+  },
+
   async create(req, res){
     const tasks = await Task.create(req.body);
     return res.json(tasks);

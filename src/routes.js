@@ -13,6 +13,7 @@ routes.get("/delete/:id", UserCotroller.delete);
 
 //Tarefas 
 routes.post("/tasks", TasksController.index);
+routes.get("/tasks/:id", TasksController.single);
 routes.post("/tasks/create", TasksController.create);
 routes.post("/tasks/update/:id", TasksController.update);
 routes.get("/tasks/delete/:id", TasksController.delete);
